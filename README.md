@@ -85,6 +85,9 @@ This is the **backend server** for **AirdropX**, a personal crypto airdrop track
 
 ---
 
+Postman link 
+https://.postman.co/workspace/My-Workspace~31cedba6-8160-44f5-8da8-45400dd38970/collection/40341322-4a9abd21-1e57-4d83-b6ed-72c919a31794?action=share&creator=40341322
+
 ## 🧪 Run Locally
 
 ### Clone the project
