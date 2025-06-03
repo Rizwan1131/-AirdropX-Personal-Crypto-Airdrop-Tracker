@@ -8,17 +8,22 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 import cookieParser from 'cookie-parser';
+import connectWithDB from './config/db.js';
 app.use(cookieParser());
 
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/airdrop', airdropRoutes);
 
-mongoose.connect(process.env.MONGO_URI)
+const PORT = process.env.PORT || 4000
+
+connectWithDB()
   .then(() => {
-    console.log("DB connected");
-    app.listen(process.env.PORT, () => {
-      console.log("Server running on port", process.env.PORT);
+    app.listen(PORT, () => {
+      console.log(`🚀Server running on port ${PORT}`);
     });
   })
-  .catch((err) => console.log(err));
+  .catch((error) => {
+    console.error("❌ DB connection failed:", error);
+  });
+
