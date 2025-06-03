@@ -13,7 +13,8 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 export const signup = async (req, res) => {
   const { username, email, password } = req.body;
-  if(!username || !email ||password){
+  
+  if(!username || !email || !password){
     return res.status(400).json({
       message:"All feilds are required",
       seccess:false
