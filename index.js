@@ -27,3 +27,6 @@ connectWithDB()
     console.error("❌ DB connection failed:", error);
   });
 
+app.get('/', async(req,res)=>{
+  res.send("this is defoult route")
+})
