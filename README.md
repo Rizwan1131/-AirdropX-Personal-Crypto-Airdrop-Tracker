@@ -26,7 +26,7 @@ This is the **backend server** for **AirdropX**, a personal crypto airdrop track
 - **Bcrupt** – For Password Hashing
 
 ---
-
+```
 ## 📂 Folder Structure
 
 /backend
@@ -57,7 +57,7 @@ This is the **backend server** for **AirdropX**, a personal crypto airdrop track
 
 
 ---
-
+```
 ## 🔐 Authentication Flow
 
 - On Signup, a verification email is sent using a short random token.
