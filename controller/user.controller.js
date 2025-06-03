@@ -35,7 +35,7 @@ export const signup = async (req, res) => {
 
   await newUser.save();
   
-  const link = `${process.env.BASE_URL}/api/v1/auth/verify/${verificationToken}`;
+  const link = `${process.env.BASE_URL}api/v1/auth/verify/${verificationToken}`;
   await sendEmail(email, 'Verify Your Email', `Click here to verify: ${link}`);
 
   res.status(201).json({ message: 'Signup successful. Please verify your email.' });
