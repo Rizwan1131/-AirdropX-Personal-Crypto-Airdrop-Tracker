@@ -90,7 +90,7 @@ This is the **backend server** for **AirdropX**, a personal crypto airdrop track
 ### Clone the project
 
 ```bash
-git clone https://github.com/your-username/airdropx-backend.git
+git clone https://github.com/Rizwan1131/-AirdropX-Personal-Crypto-Airdrop-Tracker/tree/main
 
 ### 👇.
 npm install
